@@ -1,0 +1,42 @@
+<!--
+과제
+1. 두 수를 입력받아 4칙연산의 결과를 표시해 봅시다.
+2. BMI를 계산하는 프로그램을 작성해 봅시다.
+3. 화씨를 입력받아서 섭씨로 바꾸는 프로그램을 작성해 봅시다.
+4. 입력한 문자열의 길이를 알려주는 프로그램을 작성해 봅시다.
+-->
+
+
+<!-- 
+    2번 문제. BMI를 계산하는 프로그램을 작성해 봅시다
+
+    1. 몸무게(kg), 신장(cm)을 입력받는다
+    2. 체질량지수(BMI) = 몸무게/(키*키)를 연산한다
+    3. 해당 값을 출력한다
+
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            var input = prompt("몸무게(kg)를 입력하세요");
+            var weight = Number(input);
+
+            var input = prompt("키(cm)를 입력하세요");
+            var height = Number(input/100);
+
+            var BMI = weight/(height*height);
+
+            console.log("입력한 몸무게는 " +weight+"kg 입니다");
+            console.log("입력한 키는 " +height+"m 입니다");
+            console.log("당신의 BMI는 " +BMI+" 입니다");
+
+        </script>
+    </body>
+</html>
+
+
